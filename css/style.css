@@ -21,37 +21,29 @@ body {
     padding: 20px 20px 40px;
 }
 
-/* Profile Section */
-.profile-section {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.profile-placeholder {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 20px;
-    border-radius: 12px;
-    background-color: #f5f5f5;
+/* Header Section with Photo and Info */
+.header-section {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #e0e0e0;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
-.placeholder-text {
-    color: #666;
-    font-size: 14px;
+.profile-photo-container {
+    flex-shrink: 0;
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 12px;
     object-fit: cover;
     border: 1px solid #e0e0e0;
-    margin: 0 auto 20px;
     display: block;
+}
+
+.profile-info {
+    flex: 1;
 }
 
 /* Name */
@@ -59,14 +51,13 @@ body {
     font-size: 32px;
     font-weight: 700;
     color: #2563eb;
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     letter-spacing: -0.02em;
 }
 
 /* Bio */
 .bio {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .bio p {
@@ -227,22 +218,24 @@ a:hover {
         padding: 30px 16px;
     }
     
+    .header-section {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-photo {
+        width: 160px;
+        height: 160px;
+    }
+    
     .name {
         font-size: 28px;
     }
     
     h2 {
         font-size: 22px;
-    }
-    
-    .profile-placeholder {
-        width: 160px;
-        height: 160px;
-    }
-    
-    .profile-photo {
-        width: 160px;
-        height: 160px;
     }
 }
 
@@ -253,5 +246,14 @@ a:hover {
     
     .social-links a {
         margin: 0 10px;
+    }
+    
+    .header-section {
+        gap: 15px;
+    }
+    
+    .profile-photo {
+        width: 140px;
+        height: 140px;
     }
 }
