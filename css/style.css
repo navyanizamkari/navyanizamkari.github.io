@@ -218,9 +218,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 6rem;
-    color: rgba(255, 255, 255, 0.3);
+    flex-direction: column;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.4);
     border: 3px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.profile-placeholder:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.placeholder-text {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    opacity: 0.8;
 }
 
 .profile-photo {
