@@ -375,6 +375,15 @@
     font-size: 1.5rem;
 }
 
+.author-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    display: block;
+}
+
 .author-info p {
     color: #4a4a4a;
     line-height: 1.6;
