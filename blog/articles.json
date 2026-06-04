@@ -1,0 +1,22 @@
+[
+  {
+    "id": "building-production-llm-systems",
+    "title": "Building Production LLM Systems at Scale",
+    "excerpt": "Lessons learned from building and deploying large language models in production environments, including optimization strategies and infrastructure considerations.",
+    "date": "2024-03-15",
+    "category": "Machine Learning",
+    "tags": ["LLMs", "Production", "Optimization"],
+    "readTime": "8 min",
+    "filename": "building-production-llm-systems.md"
+  },
+  {
+    "id": "ml-optimization-edge-devices",
+    "title": "ML Model Optimization in Resource-Constrained Environments",
+    "excerpt": "Strategies and techniques for deploying machine learning models on mobile devices and edge computing environments with limited resources.",
+    "date": "2024-03-10",
+    "category": "Machine Learning", 
+    "tags": ["Optimization", "Edge Computing", "Mobile ML"],
+    "readTime": "6 min",
+    "filename": "ml-optimization-edge-devices.md"
+  }
+]

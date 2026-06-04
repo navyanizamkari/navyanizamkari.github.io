@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Model Optimization in Resource-Constrained Environments - Navya Sri Nizamkari</title>
+    <meta name="description" content="Strategies and techniques for deploying machine learning models on mobile devices and edge computing environments">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/blog.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Prism.js for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../../index.html">Navya Sri Nizamkari</a>
+            </div>
+            <div class="nav-menu">
+                <a href="../../index.html" class="nav-link">Home</a>
+                <a href="../index.html" class="nav-link">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <div class="container">
+            <header class="article-header">
+                <h1>ML Model Optimization in Resource-Constrained Environments</h1>
+                <div class="article-meta">
+                    <span class="article-date"><i class="fas fa-calendar"></i> March 10, 2024</span>
+                    <span class="article-category"><i class="fas fa-tag"></i> Machine Learning</span>
+                    <span class="article-read-time"><i class="fas fa-clock"></i> 6 min read</span>
+                </div>
+                <div class="article-tags">
+                    <span class="tag">Optimization</span>
+                    <span class="tag">Edge Computing</span>
+                    <span class="tag">Mobile ML</span>
+                </div>
+            </header>
+
+            <div class="article-body">
+                <h2>The Challenge</h2>
+                <p>When deploying machine learning models on mobile devices or edge computing environments, we face significant constraints:</p>
+                <ul>
+                    <li><strong>Limited memory</strong> and storage capacity</li>
+                    <li><strong>Battery life</strong> considerations</li>
+                    <li><strong>Processing power</strong> limitations</li>
+                    <li><strong>Real-time inference</strong> requirements</li>
+                </ul>
+
+                <h2>Optimization Strategies</h2>
+
+                <h3>Model Compression</h3>
+                <p>Several techniques can dramatically reduce model size:</p>
+
+                <pre><code class="language-python"># Example: Quantization in PyTorch
+import torch.quantization as quantization
+
+# Post-training quantization
+quantized_model = quantization.quantize_dynamic(
+    model, {torch.nn.Linear}, dtype=torch.qint8
+)</code></pre>
+
+                <h3>Knowledge Distillation</h3>
+                <p>Training smaller "student" models to mimic larger "teacher" models:</p>
+                <ul>
+                    <li>Maintains much of the performance</li>
+                    <li>Significantly reduces computational requirements</li>
+                    <li>Enables deployment on constrained devices</li>
+                </ul>
+
+                <h3>Pruning Techniques</h3>
+                <p>Removing redundant connections and parameters:</p>
+                <ul>
+                    <li><strong>Structured pruning</strong>: Remove entire neurons/channels</li>
+                    <li><strong>Unstructured pruning</strong>: Remove individual weights</li>
+                    <li><strong>Gradual pruning</strong>: Progressive removal during training</li>
+                </ul>
+
+                <h2>Real-world Applications</h2>
+                <p>At Apple, these optimizations enable:</p>
+                <ul>
+                    <li><strong>On-device personalization</strong> without compromising privacy</li>
+                    <li><strong>Real-time recommendations</strong> with minimal latency</li>
+                    <li><strong>Battery-efficient</strong> AI features</li>
+                </ul>
+
+                <h2>Tools and Frameworks</h2>
+                <p>Popular tools for model optimization:</p>
+                <ul>
+                    <li><strong>Apple's Core ML Tools</strong></li>
+                    <li><strong>TensorFlow Lite</strong></li>
+                    <li><strong>ONNX Runtime</strong></li>
+                    <li><strong>PyTorch Mobile</strong></li>
+                </ul>
+
+                <h2>Conclusion</h2>
+                <p>Effective model optimization is crucial for bringing AI to edge devices. The key is finding the right balance between model performance and resource constraints.</p>
+
+                <hr>
+                <p class="article-footer">
+                    <em>Interested in learning more about mobile ML optimization? Connect with me on <a href="https://linkedin.com/in/navyanizamkari" target="_blank">LinkedIn</a> for more insights.</em>
+                </p>
+            </div>
+
+            <div class="article-navigation">
+                <a href="../index.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Back to Blog
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Navya Sri Nizamkari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Prism.js for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>
