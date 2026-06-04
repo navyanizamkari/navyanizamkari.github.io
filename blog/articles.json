@@ -1,11 +1,28 @@
 [
   {
+    "id": "diffusion-models-recommendation-systems",
+    "title": "Beyond Midjourney: How Diffusion Models are Revolutionizing Your Recommendation Feed",
+    "excerpt": "If you've kept up with AI over the last few years, you know that Diffusion Models (DMs) completely changed the game for image generation. Models like Stable Diffusion and Midjourney took over the worl...",
+    "date": "2026-06-04",
+    "category": "Machine Learning",
+    "tags": [
+      "Technology",
+      "AI"
+    ],
+    "readTime": "10 min",
+    "filename": "diffusion-models-recommendation-systems.md"
+  },
+  {
     "id": "building-production-llm-systems",
     "title": "Building Production LLM Systems at Scale",
     "excerpt": "Lessons learned from building and deploying large language models in production environments, including optimization strategies and infrastructure considerations.",
     "date": "2024-03-15",
     "category": "Machine Learning",
-    "tags": ["LLMs", "Production", "Optimization"],
+    "tags": [
+      "LLMs",
+      "Production",
+      "Optimization"
+    ],
     "readTime": "8 min",
     "filename": "building-production-llm-systems.md"
   },
@@ -14,8 +31,12 @@
     "title": "ML Model Optimization in Resource-Constrained Environments",
     "excerpt": "Strategies and techniques for deploying machine learning models on mobile devices and edge computing environments with limited resources.",
     "date": "2024-03-10",
-    "category": "Machine Learning", 
-    "tags": ["Optimization", "Edge Computing", "Mobile ML"],
+    "category": "Machine Learning",
+    "tags": [
+      "Optimization",
+      "Edge Computing",
+      "Mobile ML"
+    ],
     "readTime": "6 min",
     "filename": "ml-optimization-edge-devices.md"
   }
